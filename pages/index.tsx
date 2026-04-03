@@ -4,7 +4,7 @@ import { MapPin, Clock, X, Sparkles } from 'lucide-react';
 import { venues } from '../data/venues';
 
 export default function BenjiBdayBarHop() {
-  const [activeVenueId, setActiveVenueId] = useState(null);
+  const [activeVenueId, setActiveVenueId] = useState<string | null>(null);
   const [showIntro, setShowIntro] = useState(true);
 
   const activeVenue = venues.find(v => v.id === activeVenueId);
